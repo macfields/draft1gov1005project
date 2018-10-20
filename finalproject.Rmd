@@ -1,0 +1,20 @@
+---
+title: "finalproject"
+author: "Maclaine Fields"
+date: "10/20/2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(readxl)
+library(tidyverse)
+library(janitor)
+```
+
+```{r, message=FALSE}
+stations2017 <- read_csv("Hubway_Stations_as_of_July_2017.csv")
+nrow(stations2017)
+```
+This dataset is from Hubway. It shows the location of BlueBike Stations(Boston Metro Bike Share System). There are 193 observations in this dataset. I would like to look at the demographics of neighboorhoods where stations are located. 
+There is also data available on trip durations, routes, and station popularity. I may look at combining some of this data. 
